@@ -13,19 +13,171 @@
     <link rel="stylesheet" href="dist/css/main.css" />
   </head>
   <body>
-    <section id="hero">
-      <div class="container">
-        <p class="lead">Hi, I'm</p>
-        <h1>Kellan "Obelix" Mc Naughton</h1>
-        <h2>PHP Full Stack Developer</h2>
-        <p class="lead">
-          Full stack developer specialising in WordPress and PHP, with a
-          background in enterprise site architecture, server infrastructure, and
-          API integration. I build things that work properly and I can talk to
-          clients like a human being.
-        </p>
-      </div>
-    </section>
+    <header>
+      <nav class="nav" id="navbar">
+        <div class="container flex-between">
+          <a href="#hero" class="nav-logo">Kellan Mc Naughon</a>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button
+            class="nav-burger"
+            id="nav-burger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <p class="hero-greeting lead">Hi, I'm</p>
+          <h1 class="hero-name">Kellan "Obelix" Mc Naughton</h1>
+          <h2 class="hero-title">PHP Full Stack Developer</h2>
+          <p class="hero-description lead">
+            Full stack developer specialising in WordPress and PHP, with a
+            background in enterprise site architecture, server infrastructure
+            and API integration. I build things that work properly and I can
+            talk to clients like a human being.
+          </p>
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <div class="about-photo">
+              <img
+                src="assets/images/profile.jpg"
+                alt="Kellan Mc Naughton - PHP Full Stack Developer"
+                class="about-img"
+              />
+              <div class="about-text">
+                <p>
+                  After seven years managing client relationships and sales at
+                  BMW Motorrad, I made a deliberate transition into web
+                  development, bringing with me something most developers don't
+                  have: a genuine understanding of how businesses work and how
+                  to communicate with the people running them.
+                </p>
+                <p>
+                  For the past three years I've been building and maintaining
+                  enterprise-level WordPress sites using the Bedrock framework,
+                  managing server infrastructure on Ubuntu with Plesk and
+                  integrating complex third-party APIs including Marketo and
+                  WPML. I'm comfortable across the full stack, from DNS
+                  configuration and SSL management down to custom PHP
+                  development and database operations.
+                </p>
+                <p>
+                  I'm currently looking to move further into backend and full
+                  stack PHP development, building on solid infrastructure and
+                  architecture experience I've developed in a professional
+                  environment.
+                </p>
+                <a
+                  href="assets/Kellan Mc Naughton CV.pdf"
+                  download
+                  class="btn btn-primary"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h2>Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skills-category">
+              <h3>Languages</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">PHP</li>
+                <li class="skill-tag">JavaScript</li>
+                <li class="skill-tag">HTML5</li>
+                <li class="skill-tag">CSS3 / SCSS</li>
+                <li class="skill-tag">SQL</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Frameworks & Libraries</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">WordPress</li>
+                <li class="skill-tag">Bedrock</li>
+                <li class="skill-tag">Composer</li>
+                <li class="skill-tag">React</li>
+                <li class="skill-tag">Advanced Custom Fields Pro</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Tools & Platforms</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">Git / GitLab</li>
+                <li class="skill-tag">Docker</li>
+                <li class="skill-tag">Chrome DevTools</li>
+                <li class="skill-tag">Query Monitor</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Server & Infrastructure</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">Ubuntu Linux</li>
+                <li class="skill-tag">Plesk</li>
+                <li class="skill-tag">IONOS</li>
+                <li class="skill-tag">SSL / DNS Management</li>
+                <li class="skill-tag">SFTP</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>APIs & Integration</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">REST APIs</li>
+                <li class="skill-tag">Marketo</li>
+                <li class="skill-tag">WPML</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Database</h3>
+              <ul class="skills-list">
+                <li class="skill-tag">MySQL</li>
+                <li class="skill-tag">MariaDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work">
+        <div class="container">
+          <h2>Professional Work</h2>
+          <p class="lead">
+            A selection of professional projects I've contributed to. Due to the
+            nature of client work, code is proprietary, but I've described my
+            specific contributions to each project
+          </p>
+          <div class="work-grid">
+          <article class="work-card">
+          <div class="work-card-content">
+          <h3 class="work-card-title">Project Name</h3>
+          <p class="work-card-role">Role: Full Stack Developer</p>
+          <p class="work-card-description"></p>
+          </div>
+          </article>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>

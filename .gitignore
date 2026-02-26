@@ -3,6 +3,14 @@ Thumbs.db
 
 node_modules/
 
-dist/css/main.css.map
+*.css.map
+
+*.log
+npm-debug.log
 
 .env
+.env.local
+.env.production
+
+*.tmp
+*.temp
