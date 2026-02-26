@@ -20,13 +20,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -35,7 +37,10 @@ a {
   text-decoration: none;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
 }
 
@@ -45,7 +50,82 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  color: #e0e0e0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.441rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+  margin-bottom: 1rem;
+  color: #a855f7;
+}
+
+h3 {
+  font-size: 1.563rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #c084fc;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  max-width: 70ch;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #a0a0b0;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text-muted {
+  color: #a0a0b0;
+}
+
+.text-primary {
+  color: #a855f7;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-highlight {
+  color: #a855f7;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

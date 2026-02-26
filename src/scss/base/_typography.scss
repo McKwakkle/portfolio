@@ -1,0 +1,84 @@
+@use '../abstracts/variables' as *;
+
+$text-sm: 0.8rem;
+$text-base: 1rem;
+$text-md: 1.25rem;
+$text-lg: 1.563rem;
+$text-xl: 1.953rem;
+$text-2xl: 2.441rem;
+$text-3xl: 3.052rem;
+
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  color: $color-text;
+  font-weight: $font-bold;
+}
+
+h1 {
+  font-size: $text-2xl;
+  margin-bottom: $spacing-md;
+}
+
+h2 {
+  font-size: $text-xl;
+  margin-bottom: $spacing-md;
+  color: $color-primary;
+}
+
+h3 {
+  font-size: $text-lg;
+  font-weight: $font-semibold;
+  margin-bottom: $spacing-sm;
+  color: $color-primary-light;
+}
+
+h4 {
+  font-size: $text-md;
+  font-weight: $font-semibold;
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  font-size: $text-base;
+  color: $color-text;
+  max-width: 70ch;
+  margin-bottom: $spacing-md;
+}
+
+.lead {
+  font-size: $text-md;
+  color: $color-text-muted;
+  font-weight: $font-regular;
+  line-height: 1.7;
+}
+
+.text-muted {
+  color: $color-text-muted;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-small {
+  font-size: $text-sm;
+}
+
+.text-semibold {
+  font-weight: $font-semibold;
+}
+
+.text-highlight {
+  color: $color-primary;
+  font-weight: $font-bold;
+}
