@@ -4,3 +4,13 @@
 @use 'base/typography';
 
 @use 'layout/layout';
+
+@use 'components/buttons';
+@use 'components/cards';
+
+@use 'sections/nav';
+@use 'sections/hero';
+@use 'sections/about';
+@use 'sections/skills';
+@use 'sections/work';
+@use 'sections/projects';

@@ -176,4 +176,48 @@ section {
 
 body {
   padding-top: 70px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #a855f7;
+  color: white;
+  border-color: #a855f7;
+}
+.btn-primary:hover {
+  background-color: #9333ea;
+  border-color: #9333ea;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #a855f7;
+  border-color: #a855f7;
+}
+.btn-secondary:hover {
+  background-color: #a855f7;
+  color: white;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: #a0a0b0;
+  border-color: #2d2b42;
+}
+.btn-ghost:hover {
+  color: #a855f7;
+  border-color: #a855f7;
 }/*# sourceMappingURL=main.css.map */
