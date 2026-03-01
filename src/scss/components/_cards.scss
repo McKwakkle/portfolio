@@ -1,0 +1,149 @@
+@use '../abstracts/variables' as *;
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: $spacing-lg;
+  margin-top: $spacing-lg;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-surface;
+  border-radius: $radius-md;
+  border-left: 3px solid $color-primary;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(168, 85, 247, 0.15);
+  }
+}
+
+.work-card-image {
+  overflow: hidden;
+  background-color: $color-bg;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.work-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: $spacing-lg;
+}
+
+.work-card-title {
+  margin-bottom: $spacing-sm;
+  a {
+    color: $color-primary-light;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.work-card-role {
+  color: $color-text-muted;
+  font-size: 0.85rem;
+  margin-bottom: $spacing-md;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.work-card-description {
+  color: $color-text;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: none;
+  margin-bottom: $spacing-md;
+}
+
+.work-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+  li {
+    background-color: rgba(168, 85, 247, 0.1);
+    color: $color-primary-light;
+    padding: 0.25rem 0.75rem;
+    border-radius: $radius-lg;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+  }
+}
+
+.work-card-links {
+  display: flex;
+  gap: $spacing-sm;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.crawler-preview {
+  aspect-ratio: 16/9;
+  background-color: $color-bg;
+  padding: $spacing-md;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, $color-bg);
+    pointer-events: none;
+  }
+}
+
+.crawler-preview-header {
+  display: flex;
+  gap: $spacing-md;
+  padding-bottom: $spacing-md;
+  padding-bottom: $spacing-sm;
+  margin-bottom: $spacing-sm;
+  border-bottom: 1px solid $color-border;
+  color: $color-text-muted;
+  font-weight: 600;
+  span {
+    flex: 1;
+  }
+}
+
+.crawler-preview-row {
+  display: flex;
+  gap: $spacing-md;
+  padding: $spacing-xs 0;
+  border-bottom: 1px solid rgba(45, 43, 66, 0.5);
+  color: $color-text;
+  span {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.crawler-keyword {
+  color: $color-primary;
+  font-weight: 600;
+}
