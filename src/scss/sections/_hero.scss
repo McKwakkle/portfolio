@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .container {
+    width: 100%;
+  }
+}
+
+.hero-greeting {
+  color: $color-text-muted;
+  margin-bottom: $spacing-sm;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: $spacing-md;
+  background: linear-gradient(135deg, $color-primary-light, $color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-title {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: $color-text-muted;
+  font-weight: 400;
+  margin-bottom: $spacing-lg;
+}
+
+.hero-description {
+  max-width: 60ch;
+  margin-bottom: $spacing-xl;
+}
+
+.hero-cta {
+  display: flex;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}

@@ -418,4 +418,47 @@ body {
 }
 .nav-burger:hover {
   background-color: rgba(168, 85, 247, 0.15);
+}
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#hero .container {
+  width: 100%;
+}
+
+.hero-greeting {
+  color: #a0a0b0;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #c084fc, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-title {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: #a0a0b0;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hero-description {
+  max-width: 60ch;
+  margin-bottom: 4rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */
