@@ -298,15 +298,6 @@ body {
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
-.work-card-tags li {
-  background-color: rgba(168, 85, 247, 0.1);
-  color: #c084fc;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 1px solid rgba(168, 85, 247, 0.2);
-}
 
 .work-card-links {
   display: flex;
@@ -366,6 +357,16 @@ body {
 .crawler-keyword {
   color: #a855f7;
   font-weight: 600;
+}
+
+.skill-tag {
+  background-color: rgba(168, 85, 247, 0.1);
+  color: #c084fc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .nav {

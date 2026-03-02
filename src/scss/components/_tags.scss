@@ -1,0 +1,11 @@
+@use '../abstracts/variables'as *;
+
+.skill-tag {
+    background-color: rgba(168, 85, 247, 0.1);
+    color: $color-primary-light;
+    padding: 0.25rem 0.75rem;
+    border-radius: $radius-lg;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+  }
