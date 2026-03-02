@@ -366,4 +366,56 @@ body {
 .crawler-keyword {
   color: #a855f7;
   font-weight: 600;
+}
+
+.nav {
+  background-color: #1c1a2e;
+  padding: 1rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.nav-logo {
+  color: #a855f7;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+.nav-logo:hover {
+  color: #c084fc;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-links a {
+  color: #a0a0b0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-links a.active {
+  color: #a855f7;
+  background-color: rgba(168, 85, 247, 0.15);
+}
+
+.nav-burger {
+  display: none;
+  color: #a855f7;
+  font-size: 1.3rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid #a855f7;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.nav-burger:hover {
+  background-color: rgba(168, 85, 247, 0.15);
 }/*# sourceMappingURL=main.css.map */
