@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+
+.about-content {
+  display: flex;
+  gap: $spacing-xl;
+  align-items: flex-start;
+}
+
+.about-photo {
+  flex: 0 0 320px;
+}
+
+.about-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  // this changes the position of the photo for when i change to a different head shot
+  object-position: center;
+  border-radius: $radius-md;
+  border: 2px solid $color-primary;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.about-text {
+  flex: 1;
+  p:last-of-type {
+    margin-bottom: $spacing-lg;
+  }
+}

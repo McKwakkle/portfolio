@@ -461,4 +461,33 @@ body {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.about-content {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.about-photo {
+  flex: 0 0 320px;
+}
+
+.about-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 12px;
+  border: 2px solid #a855f7;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.about-text {
+  flex: 1;
+}
+.about-text p:last-of-type {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */
