@@ -138,3 +138,27 @@
   color: $color-primary;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+  .work-card-image {
+    aspect-ratio: 16/7;
+  }
+  .crawler-preview {
+    aspect-ratio: 16/7;
+    padding: $spacing-sm;
+    font-size: 0.75rem;
+  }
+  .work-card-content {
+    padding: $spacing-md;
+  }
+  .work-card-links {
+    flex-direction: column;
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

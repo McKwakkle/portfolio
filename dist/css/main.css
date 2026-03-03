@@ -360,6 +360,29 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+  .work-card-image {
+    aspect-ratio: 16/7;
+  }
+  .crawler-preview {
+    aspect-ratio: 16/7;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .work-card-content {
+    padding: 1rem;
+  }
+  .work-card-links {
+    flex-direction: column;
+  }
+  .work-card-links .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .skill-tag {
   background-color: rgba(168, 85, 247, 0.1);
   color: #c084fc;
