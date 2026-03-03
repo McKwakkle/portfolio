@@ -565,4 +565,32 @@ body {
 .contact-link:hover {
   color: #a855f7;
   transform: translateY(-3px);
+}
+
+.footer {
+  background-color: #1c1a2e;
+  border-top: 1px solid #2d2b42;
+  padding: 2rem;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #a0a0b0;
+  font-size: 0.85rem;
+  max-width: none;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-link {
+  color: #a0a0b0;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.footer-link:hover {
+  color: #a855f7;
+  transform: translateY(-2px);
 }/*# sourceMappingURL=main.css.map */

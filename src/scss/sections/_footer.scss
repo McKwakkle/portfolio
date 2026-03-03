@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+  background-color: $color-surface;
+  border-top: 1px solid $color-border;
+  padding: $spacing-lg;
+  p {
+    margin-bottom: 0;
+    color: $color-text-muted;
+    font-size: 0.85rem;
+    max-width: none;
+  }
+}
+
+.footer-links {
+  display: flex;
+  gap: $spacing-md;
+  align-items: center;
+}
+
+.footer-link {
+  color: $color-text-muted;
+  font-size: 1.2rem;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  &:hover {
+    color: $color-primary;
+    transform: translateY(-2px);
+  }
+}
