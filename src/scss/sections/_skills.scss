@@ -25,3 +25,9 @@
   gap: $spacing-sm;
   margin-top: $spacing-sm;
 }
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

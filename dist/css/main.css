@@ -574,6 +574,11 @@ body {
   margin-top: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
 #work .lead {
   margin-bottom: 4rem;
   max-width: 60ch;
