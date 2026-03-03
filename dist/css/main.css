@@ -683,4 +683,14 @@ body {
 .footer-link:hover {
   color: #a855f7;
   transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
