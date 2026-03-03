@@ -28,7 +28,9 @@
     font-weight: 500;
     padding: 0.5rem 0.75rem;
     border-radius: $radius-sm;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
     &.active {
       color: $color-primary;
       background-color: rgba(168, 85, 247, 0.15);
@@ -49,5 +51,26 @@
   transition: background-color 0.3s ease;
   &:hover {
     background-color: rgba(168, 85, 247, 0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: $spacing-sm;
+    &.open {
+      display: flex;
+    }
+    a {
+      padding: $spacing-sm $spacing-md;
+    }
+  }
+  .nav-burger {
+    display: flex;
+  }
+  .nav .container {
+    flex-wrap: wrap;
   }
 }

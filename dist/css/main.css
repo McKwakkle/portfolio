@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  min-width: 0;
 }
 
 html {
@@ -421,6 +422,26 @@ body {
   background-color: rgba(168, 85, 247, 0.15);
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links a {
+    padding: 0.5rem 1rem;
+  }
+  .nav-burger {
+    display: flex;
+  }
+  .nav .container {
+    flex-wrap: wrap;
+  }
+}
 #hero {
   min-height: 100vh;
   display: flex;
