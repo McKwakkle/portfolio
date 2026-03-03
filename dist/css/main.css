@@ -517,4 +517,9 @@ body {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.5rem;
+}
+
+#work .lead {
+  margin-bottom: 4rem;
+  max-width: 60ch;
 }/*# sourceMappingURL=main.css.map */
