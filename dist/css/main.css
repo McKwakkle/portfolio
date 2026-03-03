@@ -530,4 +530,39 @@ body {
 #projects .lead {
   margin-bottom: 4rem;
   max-width: 60ch;
+}
+
+#contact {
+  background-color: #171525;
+  text-align: center;
+}
+#contact .lead {
+  max-width: 60ch;
+  margin: 0 auto 4rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a0a0b0;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.contact-link i {
+  font-size: 1.5rem;
+  color: #a855f7;
+  transition: color 0.3s ease;
+}
+.contact-link:hover {
+  color: #a855f7;
+  transform: translateY(-3px);
 }/*# sourceMappingURL=main.css.map */

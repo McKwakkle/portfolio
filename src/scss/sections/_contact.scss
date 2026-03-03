@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as *;
+
+#contact {
+  background-color: $color-bg-raised;
+  text-align: center;
+  .lead {
+    max-width: 60ch;
+    margin: 0 auto $spacing-xl;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xl;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  color: $color-text-muted;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  i {
+    font-size: 1.5rem;
+    color: $color-primary;
+    transition: color 0.3s ease;
+  }
+  &:hover {
+    color: $color-primary;
+    transform: translateY(-3px);
+  }
+}
