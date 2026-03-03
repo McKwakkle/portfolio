@@ -485,6 +485,25 @@ body {
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  #hero {
+    min-height: auto;
+    padding: 6rem 0;
+  }
+  .hero-name {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .hero-description {
+    max-width: 100%;
+  }
+  .hero-cta {
+    flex-direction: column;
+  }
+  .hero-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .about-content {
   display: flex;
   gap: 4rem;

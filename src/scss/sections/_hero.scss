@@ -42,3 +42,24 @@
   gap: $spacing-md;
   flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+  #hero {
+    min-height: auto;
+    padding: $spacing-xxl 0;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .hero-description {
+    max-width: 100%;
+  }
+  .hero-cta {
+    flex-direction: column;
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
