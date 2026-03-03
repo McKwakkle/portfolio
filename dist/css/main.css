@@ -522,4 +522,12 @@ body {
 #work .lead {
   margin-bottom: 4rem;
   max-width: 60ch;
+}
+
+#projects {
+  background-color: #171525;
+}
+#projects .lead {
+  margin-bottom: 4rem;
+  max-width: 60ch;
 }/*# sourceMappingURL=main.css.map */

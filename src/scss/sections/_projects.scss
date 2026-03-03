@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+
+#projects {
+  background-color: $color-bg-raised;
+  .lead {
+    margin-bottom: $spacing-xl;
+    max-width: 60ch;
+  }
+}
