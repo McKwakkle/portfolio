@@ -27,3 +27,19 @@
     margin-bottom: $spacing-lg;
   }
 }
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-photo {
+    flex: none;
+    width: 100%;
+  }
+  .about-img {
+    aspect-ratio: 4/3;
+  }
+  .about-text {
+    width: 100%;
+  }
+}

@@ -533,6 +533,21 @@ body {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-photo {
+    flex: none;
+    width: 100%;
+  }
+  .about-img {
+    aspect-ratio: 4/3;
+  }
+  .about-text {
+    width: 100%;
+  }
+}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
