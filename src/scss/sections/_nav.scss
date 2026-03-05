@@ -73,4 +73,11 @@
   .nav .container {
     flex-wrap: wrap;
   }
+  .nav-logo {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 60px);
+  }
 }

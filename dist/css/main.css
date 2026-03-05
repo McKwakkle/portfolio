@@ -70,6 +70,7 @@ h6 {
   line-height: 1.2;
   color: #e0e0e0;
   font-weight: 700;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -179,6 +180,11 @@ body {
   padding-top: 70px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
 .btn {
   display: inline-flex;
   align-items: center;
@@ -463,6 +469,13 @@ body {
   }
   .nav .container {
     flex-wrap: wrap;
+  }
+  .nav-logo {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 60px);
   }
 }
 #hero {
