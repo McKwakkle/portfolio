@@ -1,0 +1,31 @@
+# Portfolio — Kellan Mc Naughton
+
+Personal portfolio site built from scratch to showcase professional work and personal projects.
+
+Live at: https://mckwakkle.github.io/portfolio
+
+## Built With
+
+- HTML5
+- SCSS (compiled to CSS via Dart Sass)
+- Vanilla JavaScript
+- Font Awesome
+
+## Running Locally
+```bash
+# Install dependencies
+npm install
+
+# Watch and compile SCSS
+npm run watch
+```
+
+Open `index.html` directly in your browser — no build server required.
+
+## Structure
+```
+src/scss/        # SCSS source files
+dist/css/        # Compiled CSS output
+js/              # JavaScript
+assets/          # Images and CV
+```
